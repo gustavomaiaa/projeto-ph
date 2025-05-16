@@ -1,0 +1,90 @@
+2025-05-10 14:23:57,131 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 14:23:57,131 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-10 14:23:57,139 - INFO -  * Restarting with stat
+2025-05-10 14:23:57,601 - WARNING -  * Debugger is active!
+2025-05-10 14:23:57,610 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:24:21,952 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 14:24:21,952 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-10 14:24:21,952 - INFO -  * Restarting with stat
+2025-05-10 14:24:22,420 - WARNING -  * Debugger is active!
+2025-05-10 14:24:22,434 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:25:32,538 - INFO - Medição adicionada com sucesso: pH = 7.5
+2025-05-10 14:25:32,538 - INFO - 127.0.0.1 - - [10/May/2025 14:25:32] "[35m[1mPOST /medicoes HTTP/1.1[0m" 201 -
+2025-05-10 14:25:42,099 - ERROR - Erro ao obter última medição: 0
+2025-05-10 14:25:42,099 - INFO - 127.0.0.1 - - [10/May/2025 14:25:42] "[35m[1mGET /medicoes HTTP/1.1[0m" 500 -
+2025-05-10 14:26:09,574 - ERROR - Erro ao obter última medição: 0
+2025-05-10 14:26:09,574 - INFO - 127.0.0.1 - - [10/May/2025 14:26:09] "[35m[1mGET /medicoes HTTP/1.1[0m" 500 -
+2025-05-10 14:28:15,439 - INFO -  * Detected change in 'C:\\backend-pH\\routes\\medicoes.py', reloading
+2025-05-10 14:28:15,652 - INFO -  * Restarting with stat
+2025-05-10 14:28:16,083 - INFO -  * Detected change in 'C:\\backend-pH\\routes\\medicoes.py', reloading
+2025-05-10 14:28:16,173 - INFO -  * Restarting with stat
+2025-05-10 14:28:16,303 - WARNING -  * Debugger is active!
+2025-05-10 14:28:16,313 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:28:16,714 - WARNING -  * Debugger is active!
+2025-05-10 14:28:16,722 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:28:24,518 - INFO -  * Detected change in 'C:\\backend-pH\\routes\\medicoes.py', reloading
+2025-05-10 14:28:24,570 - INFO -  * Restarting with stat
+2025-05-10 14:28:24,938 - INFO -  * Detected change in 'C:\\backend-pH\\routes\\medicoes.py', reloading
+2025-05-10 14:28:25,003 - INFO -  * Restarting with stat
+2025-05-10 14:28:25,120 - WARNING -  * Debugger is active!
+2025-05-10 14:28:25,126 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:28:25,474 - WARNING -  * Debugger is active!
+2025-05-10 14:28:25,482 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:28:39,533 - ERROR - Erro ao obter última medição: 0
+2025-05-10 14:28:39,541 - INFO - 127.0.0.1 - - [10/May/2025 14:28:39] "[35m[1mGET /medicoes HTTP/1.1[0m" 500 -
+2025-05-10 14:29:49,551 - INFO -  * Detected change in 'C:\\backend-pH\\routes\\medicoes.py', reloading
+2025-05-10 14:29:49,635 - INFO -  * Restarting with stat
+2025-05-10 14:29:50,203 - INFO -  * Detected change in 'C:\\backend-pH\\routes\\medicoes.py', reloading
+2025-05-10 14:29:50,275 - INFO -  * Restarting with stat
+2025-05-10 14:29:50,302 - WARNING -  * Debugger is active!
+2025-05-10 14:29:50,317 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:29:50,796 - WARNING -  * Debugger is active!
+2025-05-10 14:29:50,804 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:30:20,999 - INFO -  * Detected change in 'C:\\backend-pH\\routes\\medicoes.py', reloading
+2025-05-10 14:30:21,113 - INFO -  * Restarting with stat
+2025-05-10 14:30:21,562 - INFO -  * Detected change in 'C:\\backend-pH\\routes\\medicoes.py', reloading
+2025-05-10 14:30:21,666 - INFO -  * Restarting with stat
+2025-05-10 14:30:21,891 - WARNING -  * Debugger is active!
+2025-05-10 14:30:21,901 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:30:22,204 - WARNING -  * Debugger is active!
+2025-05-10 14:30:22,212 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:31:07,126 - INFO -  * Detected change in 'C:\\backend-pH\\db_config.py', reloading
+2025-05-10 14:31:07,183 - INFO -  * Restarting with stat
+2025-05-10 14:31:07,372 - INFO -  * Detected change in 'C:\\backend-pH\\db_config.py', reloading
+2025-05-10 14:31:07,444 - INFO -  * Restarting with stat
+2025-05-10 14:31:07,803 - WARNING -  * Debugger is active!
+2025-05-10 14:31:07,803 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:31:07,932 - WARNING -  * Debugger is active!
+2025-05-10 14:31:07,940 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:31:28,128 - INFO - 127.0.0.1 - - [10/May/2025 14:31:28] "[35m[1mGET /medicoes HTTP/1.1[0m" 500 -
+2025-05-10 14:32:32,660 - INFO -  * Detected change in 'C:\\backend-pH\\db_config.py', reloading
+2025-05-10 14:32:32,710 - INFO -  * Restarting with stat
+2025-05-10 14:32:33,274 - WARNING -  * Debugger is active!
+2025-05-10 14:32:33,276 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:32:33,554 - INFO -  * Detected change in 'C:\\backend-pH\\db_config.py', reloading
+2025-05-10 14:32:33,602 - INFO -  * Restarting with stat
+2025-05-10 14:32:34,087 - WARNING -  * Debugger is active!
+2025-05-10 14:32:34,098 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:32:36,169 - INFO -  * Detected change in 'C:\\backend-pH\\db_config.py', reloading
+2025-05-10 14:32:36,218 - INFO -  * Restarting with stat
+2025-05-10 14:32:36,339 - INFO -  * Detected change in 'C:\\backend-pH\\db_config.py', reloading
+2025-05-10 14:32:36,395 - INFO -  * Restarting with stat
+2025-05-10 14:32:36,764 - WARNING -  * Debugger is active!
+2025-05-10 14:32:36,770 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:32:36,874 - WARNING -  * Debugger is active!
+2025-05-10 14:32:36,874 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:32:44,982 - INFO -  * Detected change in 'C:\\backend-pH\\db_config.py', reloading
+2025-05-10 14:32:45,040 - INFO -  * Restarting with stat
+2025-05-10 14:32:45,057 - INFO -  * Detected change in 'C:\\backend-pH\\db_config.py', reloading
+2025-05-10 14:32:45,119 - INFO -  * Restarting with stat
+2025-05-10 14:32:45,547 - WARNING -  * Debugger is active!
+2025-05-10 14:32:45,565 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:32:45,588 - WARNING -  * Debugger is active!
+2025-05-10 14:32:45,598 - INFO -  * Debugger PIN: 525-996-490
+2025-05-10 14:33:00,868 - INFO - 127.0.0.1 - - [10/May/2025 14:33:00] "GET /medicoes HTTP/1.1" 200 -
+2025-05-12 14:17:57,271 - INFO -  * Detected change in 'C:\\backend-pH\\routes\\medicoes.py', reloading
+2025-05-12 14:17:57,704 - INFO -  * Restarting with stat
+2025-05-12 14:18:07,842 - INFO -  * Restarting with stat
+2025-05-12 14:20:55,662 - INFO -  * Restarting with stat

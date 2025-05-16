@@ -1,0 +1,39 @@
+[2025-05-12 14:26:25,948] [ERROR] Erro ao obter todas as medições
+Traceback (most recent call last):
+  File "C:\backend-pH\routes\medicoes.py", line 72, in obter_todas_medicoes
+    medicoes = [{'id': row[0], 'ph': row[1], 'data_hora': str(row[2])} for row in resultados]
+                       ~~~^^^
+KeyError: 0
+[2025-05-12 14:28:21,177] [ERROR] Erro ao listar medições: 0
+[2025-05-12 14:33:03,917] [ERROR] Erro ao listar medições: 0
+[2025-05-12 14:35:34,133] [ERROR] Erro ao listar medições: 0
+[2025-05-12 14:37:42,741] [ERROR] Erro ao listar medições: 0
+[2025-05-12 14:38:44,276] [ERROR] Erro ao listar medições: 0
+[2025-05-12 14:43:28,155] [ERROR] Erro ao listar medições: 0
+[2025-05-12 14:47:54,077] [ERROR] Erro ao listar medições: 0
+[2025-05-12 14:50:41,660] [ERROR] Erro ao listar medições: 0
+[2025-05-12 15:09:34,512] [INFO] Medição adicionada com sucesso: pH = 7.3
+[2025-05-12 15:09:52,618] [ERROR] Erro ao listar medições: 0
+Traceback (most recent call last):
+  File "C:\backend-pH\routes\medicoes.py", line 78, in listar_todas_medicoes
+    'id': row[0],
+          ~~~^^^
+KeyError: 0
+[2025-05-12 15:18:52,307] [ERROR] Erro ao listar medições
+Traceback (most recent call last):
+  File "C:\backend-pH\routes\medicoes.py", line 73, in listar_todas_medicoes
+    print(f"TIPO DO DADO DE DATA: {type(resultados[0][2])}")
+                                        ~~~~~~~~~~~~~^^^
+KeyError: 2
+[2025-05-12 15:52:12,211] [ERROR] Erro ao listar medições
+Traceback (most recent call last):
+  File "C:\backend-pH\routes\medicoes.py", line 73, in listar_todas_medicoes
+    print(f"TIPO DO DADO DE DATA: {type(resultados[0][2])}")
+                                        ~~~~~~~~~~~~~^^^
+KeyError: 2
+[2025-05-12 15:56:43,336] [ERROR] Erro ao listar medições
+Traceback (most recent call last):
+  File "C:\backend-pH\routes\medicoes.py", line 73, in listar_todas_medicoes
+    print(f"TIPO DO DADO DE DATA: {type(resultados[0][2])}")
+                                        ~~~~~~~~~~~~~^^^
+KeyError: 2
