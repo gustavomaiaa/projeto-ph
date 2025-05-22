@@ -15,3 +15,8 @@ def validar_ph(valor):
         return False, "O valor de pH deve estar entre 0 e 14."
 
     return True, ph
+
+def validar_email(email):
+    if not email or '@' not in email:
+        return False
+    return True

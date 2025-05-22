@@ -37,3 +37,5 @@ Traceback (most recent call last):
     print(f"TIPO DO DADO DE DATA: {type(resultados[0][2])}")
                                         ~~~~~~~~~~~~~^^^
 KeyError: 2
+[2025-05-21 22:02:03,194] [INFO] Medição adicionada com sucesso: pH = 7.2
+[2025-05-21 22:13:09,452] [INFO] Medição adicionada com sucesso: pH = 7.2

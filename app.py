@@ -2,15 +2,23 @@ from flask import Flask
 from flask_cors import CORS
 from flask_jwt_extended import JWTManager
 from extensions import db
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 # Criação da aplicação
 app = Flask(__name__)
 CORS(app)
 
 # Configurações diretamente no código
-app.config['SECRET_KEY'] = 'phobjectiveactive'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:16112004@localhost/ph_agua'
+app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+if not app.config['JWT_SECRET_KEY'] or not app.config['SQLALCHEMY_DATABASE_URI']:
+    raise RuntimeError("Variáveis de ambiente não carregadas corretamente.")
 
 # Inicialização das extensões
 db.init_app(app)
@@ -21,7 +29,7 @@ from routes.medicoes import medicoes_bp
 from routes.auth import auth_bp
 
 # Adiciona prefixo para evitar conflitos e facilitar testes
-app.register_blueprint(medicoes_bp, url_prefix='/medicoes')
+app.register_blueprint(medicoes_bp)
 app.register_blueprint(auth_bp, url_prefix='/auth')
 
 # Rota básica para teste

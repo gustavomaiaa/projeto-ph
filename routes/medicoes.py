@@ -5,8 +5,8 @@ from utils.validacoes import validar_ph  # Importando a função de validação
 from datetime import datetime
 import traceback
 import pymysql
-from utils.auth_utils import token_required
-
+from utils.auth_utils import token_required, admin_required
+from flask_jwt_extended import jwt_required , get_jwt_identity
 
 
 medicoes_bp = Blueprint('medicoes', __name__)
@@ -14,7 +14,8 @@ medicoes_bp = Blueprint('medicoes', __name__)
 # POST /medicoes → adicionar nova medição
 @medicoes_bp.route('/medicoes', methods=['POST'])
 @token_required 
-def adicionar_medicao():
+@jwt_required()
+def adicionar_medicao(current_user, current_role):
     dados = request.get_json()
     ph = dados.get('ph')
 
@@ -44,7 +45,8 @@ def adicionar_medicao():
 # GET /medicoes
 @medicoes_bp.route('/medicoes', methods=['GET'])
 @token_required
-def obter_ultima_medicao():
+@jwt_required()
+def obter_ultima_medicao(current_user, current_role):
     try:
         con = conectar_ao_banco()
         cursor = con.cursor(pymysql.cursors.DictCursor)
@@ -66,7 +68,8 @@ def obter_ultima_medicao():
         # GET /medicoes/todas
 @medicoes_bp.route('/medicoes/todas', methods=['GET'])
 @token_required
-def listar_todas_medicoes():
+@jwt_required()
+def listar_todas_medicoes(current_user, current_role):
     try:
         con = conectar_ao_banco()
         print("Conexão bem-sucedida com o banco de dados.")
@@ -105,7 +108,8 @@ def listar_todas_medicoes():
     # DELETE /medicoes/<id>
 @medicoes_bp.route('/medicoes/<int:id>', methods=['DELETE'])
 @token_required
-def deletar_medicao(id):
+@jwt_required()
+def deletar_medicao(current_user, current_role,id):
     try:
         con = conectar_ao_banco()
         cursor = con.cursor()
@@ -120,5 +124,13 @@ def deletar_medicao(id):
     except Exception as e:
         logger.error(f"Erro ao deletar medição com ID {id}", exc_info=True)
         return jsonify({'erro': str(e)}), 500
+    
+    # Rota restrita só para admin (exemplo)
+@medicoes_bp.route('/medicoes/admin', methods=['POST'])
+@token_required
+@admin_required
+def rota_restrita(current_user):
+    return jsonify({'message': 'Acesso autorizado para admin!'}), 200
+
 
 
